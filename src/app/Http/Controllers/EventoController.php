@@ -6,7 +6,8 @@ use App\Models\Evento;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 
-class EventoController extends Controller {
+class EventoController extends Controller
+{
     public function index()
     {
         return response()->json(Evento::all(), 200);
